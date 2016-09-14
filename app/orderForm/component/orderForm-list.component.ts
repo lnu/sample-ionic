@@ -4,7 +4,7 @@ import { NavController, ModalController } from 'ionic-angular';
 import { OrderFormDetailComponent } from './orderForm-detail.component';
 import { OrderFormService } from '../service/orderForm-service';
 import { LoadingService } from '../../shared/service/loading-service';
-import * as  _ from 'lodash';
+//import * as  _ from 'lodash';
 
 
 @Component({

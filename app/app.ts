@@ -9,6 +9,14 @@ import { OrderFormListComponent } from './orderForm/component/orderForm-list.com
 import { OrderFormService } from './orderForm/service/orderForm-service';
 import { LoginComponent } from './shared/component/login.component';
 
+import {Auth, User, CloudSettings, provideCloud} from '@ionic/cloud-angular';
+
+const cloudSettings: CloudSettings = {
+  'core': {
+    'app_id': '27de0193'
+  }
+};
+
 @Component({
   templateUrl: './build/app.html'
 })
@@ -45,4 +53,4 @@ export class MyApp {
   }
 }
 
-ionicBootstrap(MyApp /*,[provideCloud(cloudSettings)]*/);
+ionicBootstrap(MyApp ,[provideCloud(cloudSettings)]);
